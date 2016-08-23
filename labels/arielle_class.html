@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/2x4.css" />
+    <script src="../helpers.js"></script>
+    <script>
+window.onload = function(){
+  var namesCSV = h.csv(h.el("#input").innerHTML);
+  var names = h.collect(namesCSV, function(item){
+    return item[0];
+  });
+  var template = h.el("#label").innerHTML;
+  var output = h.el("#output");
+  h.for_each(names, function(name){
+    output.innerHTML += h.templatify(template, {
+      name: name
+    });
+  });
+}
+    </script>
+    <style>
+      div{
+        font-family:"KG Love You Through It";
+        text-align:center;
+        background-image:url(2x4_arrow.png);
+        background-position:center;
+        background-size:contain;
+        background-repeat:no-repeat;
+      }
+      h1{
+        font-size:54px;
+        letter-spacing:5px;
+      }
+      h2{
+        font-size:36px;
+        letter-spacing:2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="display:none">
+      <div id="input">
+Asiya
+Aidan
+Kyla
+Elliot
+Sadrena
+Olivia
+Elaine
+Samuel F
+Ophelia
+Jack
+Yaaqub
+Wilder
+Lennon
+Samuel M
+Jasper
+Bashir
+Bodhiana
+Adam
+Theo
+Max
+Levi
+Eva
+Abel
+Mica
+Yusuf
+      </div>
+      <div id="label">
+        <div>
+          <h1>{{name}}</h1>
+        </div>
+      </div>
+    </header>
+    <main id="output">
+
+    </main>
+  </body>
+</html>

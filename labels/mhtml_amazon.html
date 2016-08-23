@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *
+      {
+        border:0;
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family:inherit;
+      }
+      body
+      {
+        font-size:0px;
+      }
+      div
+      {
+        position:relative;
+        display:inline-block;
+        vertical-align:top;
+        width:355px;
+        height:179px;
+        margin-right:20px;
+      }
+      div:nth-child(2n)
+      {
+        margin-right:0;
+      }
+      div{
+        font-family:"Andale Mono";
+        font-size:12px;
+        line-height:14px;
+        letter-spacing:-1px;
+        padding:12px;
+      }
+      @media screen{
+        body{
+          width:730px;
+          outline:3px dashed #ccc;
+        }
+        div{
+          outline:1px solid #f00;
+        }
+      }
+      img{
+        position:absolute;
+        bottom:0;
+        right:0;
+        padding-right:inherit;
+        padding-bottom:inherit;
+        display:block;
+        width: 230px;
+      }
+      t{
+        color:#808;
+      }
+      a{
+        color:#00f;
+      }
+    </style>
+    <script src="../lib/dupe.js"></script>
+  </head>
+  <!-- Margins: .18 x .5 -->
+  <body onload="Dupe(10, 'proto');">
+    <div id="proto">
+<pre><t>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;</t>Thank you!<t>&lt;/title&gt;</t>
+<t>&lt;/head&gt;&lt;body&gt;&lt;p&gt;</t>I manage Magnetic HTML&trade; by myself
+and packed this kit personally in my apartment near
+Washington, DC. I really hope you like these! Please
+say <t>&lt;a href="<a>mailto:contact@magnetichtml.com</a>"&gt;</t>hi<t>&lt;/a&gt;</t>!
+<t>&lt;/p&gt;&lt;p&gt;</t>Robert AKA Robin Thomas<t>&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</t></pre>
+<img src="./mhtml_barcode.png" />
+    </div>
+  </body>
+</html>

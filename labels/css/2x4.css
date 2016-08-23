@@ -1,0 +1,41 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-size: 0px;
+}
+@media screen {
+  body {
+    outline: 3px dashed #ccc;
+  }
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  page-break-inside: avoid;
+}
+@media screen {
+  div {
+    outline: 1px solid #f00;
+  }
+}
+
+div {
+  height: 192px;
+  flex-basis: 384px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *
+      {
+        border:0;
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+      }
+      body
+      {
+        font-size:0px;
+      }
+      div
+      {
+        font-size:14px;
+        position:relative;
+        line-height:24px;
+        display:inline-block;
+        white-space:pre-line;
+        text-align:center;
+        /* outline:1px solid #fff; */
+        vertical-align:top;
+        width:230px;
+        height:90px;
+        margin-right:20px;
+        /* padding-top:10px; */
+      }
+      div:nth-child(3n)
+      {
+        margin-right:0;
+      }
+      div{
+        font-family:"Andale Mono";
+        font-weight:bold;
+        font-size:32px;
+        line-height:45px;
+        color:red;
+      }
+      @media screen{
+        body{
+          width:730px;
+        }
+      }
+    </style>
+    <script src="../dupe.js"></script>
+  </head>
+  <!-- Margins: .19 x .5 -->
+  <body onload="Dupe(30, 'proto');">
+    <div id="proto">DO NOT BEND<br />DO NOT BEND</div>
+  </body>
+</html>
